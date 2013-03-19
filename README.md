@@ -8,10 +8,9 @@ A PowerShell module for manipulating metadata in media files with [TagLibSharp](
 
 ## <a id="installation">Installation</a>
 1. Clone this repo to your PSModulePath (typically `$Env:UserProfile\Documents\WindowsPowerShell\Modules`)
-```
+```ps1
     C:\cd cd $Env:PSModulePath.split(';')[0]    
     C:\Users\illearth\Documents\WindowsPowerShell\Modules>git clone git@github.com:illearth/powershell-taglib.git taglib    
-    
 ```
 2. Restart powershell
 
@@ -32,7 +31,9 @@ A PowerShell module for manipulating metadata in media files with [TagLibSharp](
 
 **Example**:   
 
-```C:\mp3\Fugazi\13 Songs> get-childitem *.mp3 | set-artist "Fugazi"```
+```ps1
+   C:\mp3\Fugazi\13 Songs> get-childitem *.mp3 | set-artist "Fugazi"
+```
 
 ### <a id="set-title">set-title</a>
 **Type**: Filter   
@@ -43,7 +44,9 @@ A PowerShell module for manipulating metadata in media files with [TagLibSharp](
 
 **Example**:   
 
-```C:\mp3\Fugazi\13 Songs> get-childitem WaitingRoom.mp3 | set-title "Waiting Room"```
+```ps1
+    C:\mp3\Fugazi\13 Songs> get-childitem WaitingRoom.mp3 | set-title "Waiting Room"
+```
 
 ### <a id="set-album">set-album</a>
 **Type**: Filter   
@@ -54,7 +57,9 @@ A PowerShell module for manipulating metadata in media files with [TagLibSharp](
 
 **Example**:   
 
-```C:\mp3\Fugazi\13 Songs> get-childitem *.mp3 | set-album "13 Songs"```
+```ps1
+    C:\mp3\Fugazi\13 Songs> get-childitem *.mp3 | set-album "13 Songs"
+```
 
 ### <a id="set-track">set-track</a>
 **Type**: Filter   
@@ -65,7 +70,9 @@ A PowerShell module for manipulating metadata in media files with [TagLibSharp](
 
 **Example**:   
 
-```C:\mp3\Fugazi\13 Songs> get-childitem WaitingRoom.mp3 | set-track 1```
+```ps1
+    C:\mp3\Fugazi\13 Songs> get-childitem WaitingRoom.mp3 | set-track 1
+```
 
 ### <a id="set-disc">set-disc</a>
 **Type**: Filter   
@@ -76,7 +83,9 @@ A PowerShell module for manipulating metadata in media files with [TagLibSharp](
 
 **Example**:   
 
-```C:\mp3\Fugazi\13 Songs> get-childitem *.mp3 | set-disc 1```
+```ps1
+    C:\mp3\Fugazi\13 Songs> get-childitem *.mp3 | set-disc 1
+```
 
 ### <a id="update-trackAndDisc">update-trackAndDisc</a>
 **Type**: Filter   
@@ -87,7 +96,9 @@ A PowerShell module for manipulating metadata in media files with [TagLibSharp](
 
 **Example**:   
 
-```C:\mp3\George R. R. Martin\A Clash of Kings> get-childitem *.mp3 | update-trackAndDisc```
+```ps1
+    C:\mp3\George R. R. Martin\A Clash of Kings> get-childitem *.mp3 | update-trackAndDisc
+```
 
 ## <a id="license">License</a>
 Distributed under the [MIT License](http://opensource.org/licenses/mit-license.php)
